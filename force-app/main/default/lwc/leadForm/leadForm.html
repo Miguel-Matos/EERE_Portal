@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Lead Form">
+        <!--to add medium margin around its contents for spacing-->
+        <div class="slds-m-around_medium">
+
+            <lightning-input label="First Name" value={firstName} onchange={handleInputChange}
+                data-id="firstName"></lightning-input>
+            <lightning-input label="Last Name" value={lastName} onchange={handleInputChange}
+                data-id="lastName"></lightning-input>
+            <lightning-input label="Company" value={Company} onchange={handleInputChange}
+                data-id="Company"></lightning-input>
+            <lightning-button variant="brand" label="Submit" onclick={handleSubmit}></lightning-button>
+
+        </div>
+    </lightning-card>
+</template>
