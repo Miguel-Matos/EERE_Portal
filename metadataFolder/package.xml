@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>CEO</members>
+        <members>Director_of_Sales_East</members>
+        <members>Director_of_Sales_North</members>
+        <members>Director_of_Sales_South</members>
+        <members>Director_of_Sales_West</members>
+        <members>Director_of_Service_East</members>
+        <members>Director_of_Service_North</members>
+        <members>Director_of_Service_South</members>
+        <members>Director_of_Service_West</members>
+        <members>Regional_VP_East</members>
+        <members>Regional_VP_North</members>
+        <members>Regional_VP_South</members>
+        <members>Regional_VP_West</members>
+        <members>Sales_Associate_East</members>
+        <members>Sales_Manager_East</members>
+        <members>Service_Associate_East</members>
+        <members>Service_Manager_East</members>
+        <name>Role</name>
+    </types>
+    <version>59.0</version>
+</Package>
