@@ -6,6 +6,7 @@ export default class LeadForm extends LightningElement {
     @track firstName = '';
     @track lastName = '';
     @track Company = '';
+    @track Email = '';
 
     handleInputChange(event) {
         const field = event.target.dataset.id;
@@ -15,6 +16,8 @@ export default class LeadForm extends LightningElement {
             this.lastName = event.target.value;
         } else if (field === 'Company') {
             this.Company = event.target.value;
+        } else if(field === 'Email') {
+            this.Email = event.target.value
         }
     }
 
@@ -22,7 +25,8 @@ export default class LeadForm extends LightningElement {
         const lead = {
             FirstName: this.firstName,
             LastName: this.lastName,
-            Company: this.Company
+            Company: this.Company,
+            Email: this.Email
         };
 
         createLead({ lead })
@@ -48,5 +52,6 @@ export default class LeadForm extends LightningElement {
         this.firstName = '';
         this.lastName = '';
         this.Company = '';
+        this.Email = '';
     }
 }
