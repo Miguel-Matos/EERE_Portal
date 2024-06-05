@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Web_to_Lead_West_Lead</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Web-to-Lead-West</label>
+    <queue>Web_to_Lead_West</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

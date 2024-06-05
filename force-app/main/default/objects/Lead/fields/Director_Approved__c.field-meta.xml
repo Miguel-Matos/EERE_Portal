@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Director_Approved__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Director can check if they want the lead approved or not</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Director has approved the lead</inlineHelpText>
+    <label>Director Approved</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

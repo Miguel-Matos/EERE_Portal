@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Discouraged__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Does not meet some or all the requirements needed to qualify.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Does not meet some or all the requirements needed to qualify.</inlineHelpText>
+    <label>Discouraged</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

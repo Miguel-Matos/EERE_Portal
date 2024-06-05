@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NAICS_Code__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(  Industry  , 
+
+&quot;Administrative Management and General Management Consulting Services&quot;, &quot;541611&quot;, 
+
+&quot;Other Scientific and Technical Consulting Services&quot;, &quot;541689&quot;, 
+
+&quot;Engineering Services&quot;, &quot;541330&quot;, 
+
+&quot;Facilities Support Services&quot;, &quot;561210&quot;, 
+
+&quot;Public Relations Agencies&quot;, &quot;541820&quot;, 
+
+&quot;Computer Systems Design Services&quot;, &quot;541512&quot;, 
+
+&quot;Other Computer Related Services&quot;, &quot;541519&quot;, 
+
+&quot;Internet Publishing and Broadcasting and Web Search Portals&quot;, &quot;519130&quot;, 
+
+&quot;Other Management Consulting Services&quot;, &quot;541618&quot;, 
+
+&quot;PHOTOGRAPHIC AND PHOTOCOPYING EQUIPMENT MANUFACTURING&quot;, &quot;333316&quot;,
+
+&quot;&quot;)</formula>
+    <label>NAICS Code</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

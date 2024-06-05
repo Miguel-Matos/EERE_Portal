@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Main_Account</fullName>
+    <active>true</active>
+    <label>Main Account</label>
+    <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Active__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CustomerPriority__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Grants_Deals_Agreements__c</picklist>
+        <values>
+            <fullName>Bipartisan Infrastructure Law - Carbon Dioxide Transportation Infrastructure Finance and Innovation %28CIFIA%29 Program%3A Future Growth Grants %28Section 40304%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concentrating Solar Flux to Heat %26 Power</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FY2024 Vehicle Technologies Office Research %26 Development Funding Opportunity Announcement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FY24 Energy and Emissions Intensive Industries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MACRO - Mixed Algae Conversion Research Opportunity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photovoltaics Research and Development %28PVRD%29 FOA 2024</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promoting Domestic and International Consensus on Clean Fossil Energy and Carbon Management Technologies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar and Wind Interconnection for Future Transmission %28SWIFTR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategies to Increase Hydropower Flexibility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>University Nuclear Leadership Program%E2%80%93 Scholarship and Fellowship Support</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Administrative Management and General Management Consulting Services</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Computer Systems Design Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facilities Support Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internet Publishing and Broadcasting and Web Search Portals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Computer Related Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Management Consulting Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Scientific and Technical Consulting Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PHOTOGRAPHIC AND PHOTOCOPYING EQUIPMENT MANUFACTURING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Relations Agencies</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsidiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SLA__c</picklist>
+        <values>
+            <fullName>Bronze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platinum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Channel Partner %2F Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer - Channel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer - Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology Partner</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>UpsellOpportunity__c</picklist>
+        <values>
+            <fullName>Maybe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>queue@eere.com</email>
+    <name>Web-to-Lead-North</name>
+    <queueMembers>
+        <roles>
+            <role>Sales_Associate_North1</role>
+            <role>Sales_Associate_North2</role>
+        </roles>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

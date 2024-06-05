@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grants_Deals_Agreements__c</fullName>
+    <externalId>false</externalId>
+    <label>Grants/Deals/Agreements</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>FOA_Grants</valueSetName>
+    </valueSet>
+</CustomField>

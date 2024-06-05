@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Products_Services_Offered__c</fullName>
+    <description>The products and services offered by the account</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What products and services does the account offer?</inlineHelpText>
+    <label>Products/Services Offered</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

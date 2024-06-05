@@ -9,4 +9,42 @@
         <members>*</members>
         <name>Profile</name>
     </types>
+    <types>
+        <members>*</members>
+        <name>Queue</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Group</name>
+    </types>
+    <types>
+        <members>Case</members>
+        <members>Lead</members>
+        <name>AssignmentRules</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>SharingCriteriaRule</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>SharingOwnerRule</name>
+    </types>
+
+    <types>
+        <members>*</members>
+        <name>CustomField</name>
+    </types>
+    <types>  
+        <members>Account</members>   
+        <name>CustomObject</name>  
+    </types>
+    <types>  
+        <members>Lead</members>   
+        <name>CustomObject</name>  
+    </types>
+    <types>  
+        <members>Opportunity</members>   
+        <name>CustomObject</name>  
+    </types>
 </Package>

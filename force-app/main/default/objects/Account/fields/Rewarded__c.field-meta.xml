@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rewarded__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Client has an active grant</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Client has an active grant</inlineHelpText>
+    <label>Rewarded</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>
