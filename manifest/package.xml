@@ -5,4 +5,8 @@
         <members>*</members>
         <name>Role</name>
     </types>
+    <types>
+        <members>*</members>
+        <name>Profile</name>
+    </types>
 </Package>
