@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Bipartisan Infrastructure Law - Carbon Dioxide Transportation Infrastructure Finance and Innovation (CIFIA) Program: Future Growth Grants (Section 40304)</fullName>
+        <default>false</default>
+        <label>Bipartisan Infrastructure Law - Carbon Dioxide Transportation Infrastructure Finance and Innovation (CIFIA) Program: Future Growth Grants (Section 40304)</label>
+    </customValue>
+    <customValue>
+        <fullName>Photovoltaics Research and Development (PVRD) FOA 2024</fullName>
+        <default>false</default>
+        <label>Photovoltaics Research and Development (PVRD) FOA 2024</label>
+    </customValue>
+    <customValue>
+        <fullName>MACRO - Mixed Algae Conversion Research Opportunity</fullName>
+        <default>false</default>
+        <label>MACRO - Mixed Algae Conversion Research Opportunity</label>
+    </customValue>
+    <customValue>
+        <fullName>Concentrating Solar Flux to Heat &amp; Power</fullName>
+        <default>false</default>
+        <label>Concentrating Solar Flux to Heat &amp; Power</label>
+    </customValue>
+    <customValue>
+        <fullName>FY2024 Vehicle Technologies Office Research &amp; Development Funding Opportunity Announcement</fullName>
+        <default>false</default>
+        <label>FY2024 Vehicle Technologies Office Research &amp; Development Funding Opportunity Announcement</label>
+    </customValue>
+    <customValue>
+        <fullName>Promoting Domestic and International Consensus on Clean Fossil Energy and Carbon Management Technologies</fullName>
+        <default>false</default>
+        <label>Promoting Domestic and International Consensus on Clean Fossil Energy and Carbon Management Technologies</label>
+    </customValue>
+    <customValue>
+        <fullName>Solar and Wind Interconnection for Future Transmission (SWIFTR)</fullName>
+        <default>false</default>
+        <label>Solar and Wind Interconnection for Future Transmission (SWIFTR)</label>
+    </customValue>
+    <customValue>
+        <fullName>FY24 Energy and Emissions Intensive Industries</fullName>
+        <default>false</default>
+        <label>FY24 Energy and Emissions Intensive Industries</label>
+    </customValue>
+    <customValue>
+        <fullName>Strategies to Increase Hydropower Flexibility</fullName>
+        <default>false</default>
+        <label>Strategies to Increase Hydropower Flexibility</label>
+    </customValue>
+    <customValue>
+        <fullName>University Nuclear Leadership Program– Scholarship and Fellowship Support</fullName>
+        <default>false</default>
+        <label>University Nuclear Leadership Program– Scholarship and Fellowship Support</label>
+    </customValue>
+    <description>List of FOA Grants Available</description>
+    <masterLabel>FOA Grants</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

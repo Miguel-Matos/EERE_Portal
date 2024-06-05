@@ -6,7 +6,19 @@
         <name>Role</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Associate</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>Manager</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>Director</members>
+        <name>Profile</name>
+    </types>
+        <types>
+        <members>Vice President</members>
         <name>Profile</name>
     </types>
     <types>
@@ -44,7 +56,7 @@
         <name>CustomObject</name>  
     </types>
     <types>  
-        <members>Opportunity</members>   
-        <name>CustomObject</name>  
+        <members>FOA_Grants</members>   
+        <name>GlobalValueSet</name>  
     </types>
 </Package>
