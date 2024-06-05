@@ -6,22 +6,6 @@
         <name>Role</name>
     </types>
     <types>
-        <members>Associate</members>
-        <name>Profile</name>
-    </types>
-    <types>
-        <members>Manager</members>
-        <name>Profile</name>
-    </types>
-    <types>
-        <members>Director</members>
-        <name>Profile</name>
-    </types>
-        <types>
-        <members>Vice President</members>
-        <name>Profile</name>
-    </types>
-    <types>
         <members>*</members>
         <name>Queue</name>
     </types>
@@ -63,18 +47,7 @@
 		<members>*</members>
 		<name>EmailTemplate</name>
 	</types>
-	<types>
-		<members>*</members>
-		<name>Flow</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>FlowCategory</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>FlowDefinition</name>
-	</types>
+
 <types>
 		<members>*</members>
 		<name>HomePageComponent</name>
@@ -82,10 +55,6 @@
 	<types>
 		<members>*</members>
 		<name>HomePageLayout</name>
-	</types>
-<types>
-		<members>*</members>
-		<name>Layout</name>
 	</types>
 	<types>
 		<members>*</members>
@@ -136,11 +105,19 @@
         <name>StandardValueSet</name>
     </types>
     <types>
+        <members>Account.Industry</members>
+        <name>GlobalValueSet</name>
+    </types>
+    <types>
         <members>Lead.Status</members>
         <name>StandardValueSet</name>
     </types>
-  <types>
-    <members>*</members>
-    <name>RecordType</name>
-  </types>
+    <types>
+        <members>Lead.Lead Advancement</members>
+        <name>BusinessProcess</name>
+    </types>
+    <types>
+        <members>Opportunity.Grants_Deals_Agreements__c</members>
+        <name>CustomField</name>
+    </types>
 </Package>
