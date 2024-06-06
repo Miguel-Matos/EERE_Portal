@@ -134,6 +134,10 @@
         <name>HomePageLayout</name>
     </types>
     <types>
+        <members>leadForm</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <types>
         <members>Account.AllAccounts</members>
         <members>Account.MyAccounts</members>
         <members>Account.NewLastWeek</members>

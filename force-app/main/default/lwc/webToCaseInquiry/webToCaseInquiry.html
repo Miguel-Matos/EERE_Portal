@@ -1,0 +1,24 @@
+<template>
+  <!-- <form action="https://platform-enterprise-1967-dev-ed.scratch.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DRt000003zvcc" method="POST">
+
+    <input type=hidden name="orgid" value="00DRt000003zvcc">
+    <input type=hidden name="retURL" value="http://google.com">
+
+    <input type="hidden"  id="external" name="external" value="1" /><br>
+    
+    <input type="submit" name="submit">
+    
+    </form> -->
+
+    <lightning-card title="Inquiries">
+      <div class="slds-form">
+        <lightning-input label="Name" value={name} onchange={handleChange}></lightning-input>
+        <lightning-input label="Email" value={email} onchange={handleChange}></lightning-input>
+        <lightning-input label="Phone" value={phone} onchange={handleChange}></lightning-input>
+        <lightning-input label="Subject" value={subject} onchange={handleChange}></lightning-input>
+        <lightning-textarea label="Description" value={description} onchange={handleChange}></lightning-textarea>
+        <lightning-button label="Submit" variant="Neutral" onclick={handleSubmit}></lightning-button>
+      </div>
+    </lightning-card>
+
+</template>
