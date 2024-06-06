@@ -3,6 +3,7 @@
     <types>
         <members>accordionInfo</members>
         <members>carousel</members>
+        <members>heroImage</members>
         <members>landingPageNav</members>
         <name>LightningComponentBundle</name>
     </types>
