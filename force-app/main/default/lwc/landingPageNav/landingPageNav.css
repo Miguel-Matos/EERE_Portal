@@ -5,7 +5,7 @@
   
   /* Add a black background color to the top navigation */
   .topnav {
-    background-color: #264823;
+    background-color: #215e35;
     overflow: hidden;
   }
   
@@ -23,6 +23,7 @@
   .topnav img {
     float: right;
   }
+   
   
   /* Change the color of links on hover */
   .topnav a:hover {
@@ -58,3 +59,8 @@
         text-align: left;
       }
     }
+
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+}
