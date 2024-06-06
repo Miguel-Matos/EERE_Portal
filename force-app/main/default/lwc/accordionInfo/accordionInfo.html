@@ -1,0 +1,40 @@
+<template>
+
+
+    <lightning-accordion class="example-accordion"
+                         onsectiontoggle={handleToggleSection}
+                         active-section-name="B">
+        <lightning-accordion-section name="A" label="EERE Small Business Program">
+            <lightning-button-menu slot="actions"
+                                  alternative-text="Show menu"
+                                  icon-size="x-small"
+                                  menu-alignment="right">
+                <lightning-menu-item value="New" label="Menu Item One"></lightning-menu-item>
+                <lightning-menu-item value="Edit" label="Menu Item Two"></lightning-menu-item>
+            </lightning-button-menu>
+            <p>Small business owners have the opportunity to provide products and services to the Office of Energy Efficiency and Renewable Energy (EERE), which helps the U.S. Department of Energy meet its clean energy mission.
+
+            </p>
+            <p>From administrative and facility support to technical consulting and trade show management, small businesses provide critical services to EERE.
+
+            </p>
+            <p>To learn how your small business can work with EERE, check out the Qualifying for EERE Small Business Contracting Opportunities page.
+
+            </p>
+            <p>Small businesses that contract with EERE can be assured that the agency is committed to obtaining the best value in goods, services, and equipment. EERE is dedicated to the highest standards of ethical conduct through the contracting process.</p>
+            
+        </lightning-accordion-section>
+
+        <lightning-accordion-section name="B" label="How Do I Apply for EERE Funding">
+            <p>The funding application process used by DOE’s Office of Energy Efficiency and Renewable Energy (EERE) involves multiple steps, which can take several months from start to finish. Hundreds of successful EERE projects have already helped increase the use and effectiveness of affordable renewable energy and energy efficiency technologies across the United States.</p>
+            <p>The EERE Funding Opportunity eXCHANGE serves as the “home base” for anyone interested in registering, monitoring, and applying for financial assistance. EERE uses this free, web-based platform to issue competitive solicitations, or funding opportunity announcements (FOAs), year-round following a consistent process.
+
+                Typically, funding notices are preceded by a request for information (RFI) and/or a notice of intent (NOI). RFIs represent the initial fact-finding and need-identifying phase of the process, while NOIs serve as a hypothetical heads-up for interested applicants to better understand EERE’s areas of interest for a potential funding opportunity, though one is not guaranteed.
+                
+                EERE also makes other types of financial opportunities available to researchers, individuals, and businesses, including unsolicited proposals and non-competitive formula grants.</p>
+            
+        </lightning-accordion-section>
+
+        
+    </lightning-accordion>
+</template>
