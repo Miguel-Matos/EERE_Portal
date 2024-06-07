@@ -2,15 +2,16 @@ import { LightningElement } from 'lwc';
 import createInquiry from '@salesforce/apex/InquiryController.createInquiry';
 
 export default class WebToCaseInquiry extends LightningElement {
-  name;
-  email;
-  phone;
-  subject;
-  description;
+  name = '';
+  email = '';
+  phone = '';
+  subject = '';
+  description = '';
 
 
 
   handleChange(e) {
+    e.preventDefault();
     const field = e.target.name;
     const val = e.target.value;
 
@@ -35,6 +36,7 @@ export default class WebToCaseInquiry extends LightningElement {
       Subject__c: this.subject,
       Description__c: this.description
     }
+    console.log(inquiry);
 
     createInquiry({inquiry}).catch(error => console.log(error.body.message));
   }
