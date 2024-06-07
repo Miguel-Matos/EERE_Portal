@@ -1,5 +1,5 @@
 .outer-container {
-    max-width: 1200px;
+    size: 12;
     margin: 0 auto;
   }
   
@@ -61,6 +61,6 @@
     }
 
 .hero {
-  max-width: 1200px;
+  size: 12;
   margin: 0 auto;
 }
