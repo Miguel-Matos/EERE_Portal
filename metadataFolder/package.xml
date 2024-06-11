@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
+        <members>ContactController</members>
+        <members>InquiryController</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
         <members>Case.Standard</members>
         <members>Lead.Standard</members>
         <members>Lead.Web-to-Lead Queues</members>
@@ -58,6 +63,10 @@
         <members>Account.UpsellOpportunity__c</members>
         <members>Account.Website</members>
         <members>Account.YearStarted</members>
+        <members>Inquiry__c.Description__c</members>
+        <members>Inquiry__c.Email__c</members>
+        <members>Inquiry__c.Phone__c</members>
+        <members>Inquiry__c.Subject__c</members>
         <members>Lead.Address</members>
         <members>Lead.AnnualRevenue</members>
         <members>Lead.CampaignId</members>
@@ -103,8 +112,13 @@
     </types>
     <types>
         <members>Account</members>
+        <members>Inquiry__c</members>
         <members>Lead</members>
         <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Inquiry__c</members>
+        <name>CustomTab</name>
     </types>
     <types>
         <members>Account_Record_Page</members>
@@ -113,6 +127,7 @@
         <members>CrisisCenter_UtilityBar</members>
         <members>EERE_Account</members>
         <members>EERE_UtilityBar</members>
+        <members>Inquiry_Record_Page</members>
         <members>Lead_Record_Page</members>
         <members>Lead_Record_Page1</members>
         <members>LightningSalesConsole_UtilityBar</members>
@@ -134,7 +149,7 @@
         <name>HomePageLayout</name>
     </types>
     <types>
-        <members>leadForm</members>
+        <members>webToCaseInquiry</members>
         <name>LightningComponentBundle</name>
     </types>
     <types>
@@ -143,6 +158,8 @@
         <members>Account.NewLastWeek</members>
         <members>Account.NewThisWeek</members>
         <members>Account.PlatinumandGoldSLACustomers</members>
+        <members>Inquiry__c.All</members>
+        <members>Inquiry__c.Message_Queue_Inquiry</members>
         <members>Lead.AllOpenLeads</members>
         <members>Lead.Assigned_Leads</members>
         <members>Lead.MyUnreadLeads</members>
@@ -156,6 +173,7 @@
         <name>ListView</name>
     </types>
     <types>
+        <members>Message_Queue</members>
         <members>Web_to_Lead_East</members>
         <members>Web_to_Lead_North</members>
         <members>Web_to_Lead_South</members>

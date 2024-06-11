@@ -22,4 +22,21 @@
 		<members>*</members>
 		<name>ExperienceBundle</name>
 	</types>
+
+	    <types>
+        <members>*</members>
+        <name>CustomField</name>
+    </types>
+    <types>  
+        <members>Inquiry__c</members>   
+        <name>CustomObject</name>  
+    </types>
+	    <types>  
+        <members>Message_Queue</members>   
+        <name>Queue</name>  
+    </types>
+		<types>
+    <members>Inquiry__c</members>
+    <name>CustomTab</name>
+ </types>
 </Package>
