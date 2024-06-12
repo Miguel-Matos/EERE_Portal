@@ -1,14 +1,16 @@
 <template>
-  <template lwc:if={appianData}>
-    <lightning-accordion>
-      <template for:each={appianData} for:item="item">
-        <lightning-accordion-section key={item._id} name={item.title} label={item.title}>
-            <p class="slds-p-around_medium">{item.description}</p>
-        </lightning-accordion-section>
-      </template>
-    </lightning-accordion>
-  </template>
-  <template lwc:else>
+  <template lwc:if={isLoading}>
     <p>Loading...</p>
+  </template>
+  <template lwc:elseif={appianData}>
+    <lightning-datatable
+      key-field="_id"
+      data={appianData}
+      columns={columns}
+      hide-checkbox-column="true">
+    </lightning-datatable>
+  </template>
+  <template lwc:elseif={error}>
+    <p>Error: {error.message}</p>
   </template>
 </template>
