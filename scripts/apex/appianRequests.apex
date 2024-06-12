@@ -1,1 +1,1 @@
-Appian.getRequest();
+AppianController.getRequest();

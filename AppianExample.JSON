@@ -1,0 +1,64 @@
+{
+  "_id": {
+    "$oid": "66579ac2dd36b16e38409e36"
+  },
+  "@type": "dcat:Dataset",
+  "title": "DOE Hearings and Appeals Case Decisions",
+  "description": "The Office of Hearings and Appeals (HG) is the quasi-judicial arm of the Department of Energy that conducts hearings and issues initial Departmental decisions with respect to a wide range of legal issues and programs delegated to the Office by the Secretary of Energy, including: 1) personnel security clearance eligibility determinations, 2) DOE contractor employee \"whistleblower\" cases, 3) Freedom of Information and Privacy Act appeals, as well as other appeals involving administrative determinations reached by Department officials, 4) Applications for Exception from the requirements of a DOE rule, regulation or order, and 5) Petitions for Special Redress seeking \"extraordinary relief\" -- apart from or in addition to -- any other remedy provided in the Department's enabling statutes.",
+  "modified": "2014-04-25Z",
+  "accessLevel": "public",
+  "identifier": "DOE-019-4381227569",
+  "dataQuality": true,
+  "landingPage": "http://energy.gov/oha/",
+  "license": "https://creativecommons.org/licenses/by/4.0",
+  "spatial": "United States",
+  "temporal": "1994/2014",
+  "publisher": {
+    "@type": "org:Organization",
+    "name": "DOE/Office of Hearings and Appeals"
+  },
+  "accrualPeriodicity": "R/P1D",
+  "contactPoint": {
+    "@type": "vcard:Contact",
+    "fn": "Fred Brown",
+    "hasEmail": "mailto:Fred.Brown@hq.doe.gov"
+  },
+  "distribution": [
+    {
+      "@type": "dcat:Distribution",
+      "mediaType": "text/csv",
+      "title": "Case Decisions",
+      "downloadURL": "https://energy.gov/oha/"
+    }
+  ],
+  "keyword": [
+    "Appeals",
+    "Crude",
+    "EIA",
+    "Energy Efficiency",
+    "Exceptions",
+    "FOIA",
+    "Miscellaneous",
+    "Oil",
+    "Personnel Security",
+    "Product Efficiency",
+    "Refunds",
+    "Security",
+    "Utilities",
+    "Whistleblower",
+    "Worker Appeal",
+    "Worker Health"
+  ],
+  "bureauCode": [
+    "019:60"
+  ],
+  "programCode": [
+    "019:053"
+  ],
+  "language": [
+    "en-US"
+  ],
+  "theme": [
+    "corporate management"
+  ]
+}
