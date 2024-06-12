@@ -3,10 +3,14 @@
     <version>59.0</version>
     <types>
         <members>*</members>
-        <name>Role</name>
+        <name>NamedCredential</name>
     </types>
-    <types>
+        <types>
         <members>*</members>
-        <name>Profile</name>
+        <name>ExternalCredential</name>
+    </types>
+        <types>
+        <members>Appian_External_Credential_Access</members>
+        <name>PermissionSet</name>
     </types>
 </Package>
