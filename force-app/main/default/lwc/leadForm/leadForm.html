@@ -10,9 +10,23 @@
             <lightning-input label="Company" value={Company} onchange={handleInputChange}
                 data-id="Company"></lightning-input>
             <lightning-input label="Email" value={Email} onchange={handleInputChange} data-id="Email"></lightning-input>
-            
 
-            <!--submit button-->>
+            <lightning-combobox label="Region" value={Region__c} onchange={handleInputChange} data-id="Region__c"
+                options={regionOptions}></lightning-combobox>
+
+            <!-- issue
+            <lightning-input label="No. of Employees" value={NumberOfEmployees} onchange={handleInputChange}
+                data-id="NumberOfEmployees" type="number"></lightning-input>
+            -->
+
+            <lightning-input label="Annual Revenue" value={AnnualRevenue} onchange={handleInputChange}
+                data-id="AnnualRevenue" type="number"></lightning-input>
+            <lightning-textarea label="Type of Work" value={Type_of_work__c} onchange={handleInputChange}
+                data-id="Type_of_work__c"></lightning-textarea>
+            <lightning-textarea label="Products/Services Offered" value={Products_Services_Offered__c}
+                onchange={handleInputChange} data-id="Products_Services_Offered__c"></lightning-textarea>
+
+            <!--submit button-->
             <lightning-button variant="brand" label="Submit" onclick={handleSubmit}></lightning-button>
 
         </div>
