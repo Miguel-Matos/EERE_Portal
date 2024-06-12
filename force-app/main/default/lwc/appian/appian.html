@@ -2,15 +2,32 @@
   <template lwc:if={isLoading}>
     <p>Loading...</p>
   </template>
-  <template lwc:elseif={appianData}>
+  <template lwc:else>
+    <lightning-input
+      type="search"
+      label="Search"
+      onchange={handleSearch}
+      value={searchTerm}
+      placeholder="Search by keywords, titles, themes, etc.">
+    </lightning-input>
+    <lightning-dual-listbox
+      name="columns"
+      label="Select Columns"
+      source-label="Available Columns"
+      selected-label="Selected Columns"
+      field-level-help="Select the columns you want to display in the table"
+      options={comboboxOptions}
+      value={selectedColumns}
+      onchange={handleColumnSelection}>
+    </lightning-dual-listbox>
     <lightning-datatable
       key-field="_id"
-      data={appianData}
+      data={filteredData}
       columns={columns}
       hide-checkbox-column="true">
     </lightning-datatable>
-  </template>
-  <template lwc:elseif={error}>
-    <p>Error: {error.message}</p>
+    <template lwc:if={error}>
+      <p>Error: {error.message}</p>
+    </template>
   </template>
 </template>
