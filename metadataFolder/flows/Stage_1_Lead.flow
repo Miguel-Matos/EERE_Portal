@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <decisions>
+        <name>Check_Conditions</name>
+        <label>Check Conditions</label>
+        <locationX>783</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>Full_Application_Stage</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Discourage</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.AnnualRevenue</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <numberValue>5000000.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Full_Application_Stage_Discouraged</targetReference>
+            </connector>
+            <label>Discourage</label>
+        </rules>
+    </decisions>
+    <description>Automates the first stage of the lead process</description>
+    <environments>Default</environments>
+    <interviewLabel>Stage 1 Lead {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Stage 1 Lead v2</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>Move lead to the Full Application Stage</description>
+        <name>Full_Application_Stage</name>
+        <label>Full Application Stage</label>
+        <locationX>1124</locationX>
+        <locationY>553</locationY>
+        <inputAssignments>
+            <field>LeadSource</field>
+            <value>
+                <stringValue>Web</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Full Application</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Set lead to Full application but with discouraged status</description>
+        <name>Full_Application_Stage_Discouraged</name>
+        <label>Full Application Stage Discouraged</label>
+        <locationX>495</locationX>
+        <locationY>539</locationY>
+        <inputAssignments>
+            <field>Discouraged__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LeadSource</field>
+            <value>
+                <stringValue>Web</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Full Application</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>650</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Check_Conditions</targetReference>
+        </connector>
+        <object>Lead</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

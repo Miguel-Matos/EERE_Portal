@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <version>59.0</version>
     <types>
+        <members>Move_Lead_to_Queue</members>
         <members>Stage_1_Lead</members>
         <name>Flow</name>
     </types>
-    <types>
-        <members>Move_Lead_to_Queue</members>
-        <name>Flow</name>
-    </types>
-
+    <version>59.0</version>
 </Package>
