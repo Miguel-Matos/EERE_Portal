@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>AppianController</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Appian_EERE_Endpoint</members>
+        <name>ExternalCredential</name>
+    </types>
+    <types>
+        <members>appian</members>
+        <members>customerPortal</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>Appian_EERE_Endpoint_Credentials</members>
+        <name>NamedCredential</name>
+    </types>
+    <types>
+        <members>Appian_External_Credential_Access</members>
+        <name>PermissionSet</name>
+    </types>
+    <version>59.0</version>
+</Package>

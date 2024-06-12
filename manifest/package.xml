@@ -2,15 +2,8 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <version>59.0</version>
     <types>
-        <members>*</members>
-        <name>NamedCredential</name>
+        <members>customerPortal</members>
+        <name>LightningComponentBundle</name>
     </types>
-        <types>
-        <members>*</members>
-        <name>ExternalCredential</name>
-    </types>
-        <types>
-        <members>Appian_External_Credential_Access</members>
-        <name>PermissionSet</name>
-    </types>
+    
 </Package>
