@@ -4,12 +4,22 @@
             <lightning-tabset>
                 <lightning-tab label="Application Status">
                     <template if:true={application}>
-                        <p>Status: {application.status}</p>
-                        <p>Submitted Date: {application.submittedDate}</p>
-                        <p>Review Comments: {application.reviewComments}</p>
+                        <lightning-card title="Application Status">
+                            <div class="slds-m-around_medium">
+                                <template lwc:if={application}>
+                                    <p><strong>Name:</strong> {application.Name}</p>
+                                    <p><strong>Application Stage:</strong> {application.Stage__c}</p>
+                                    <p><strong>Phone:</strong> {application.Phone__c}</p>
+                                    <p><strong>Company:</strong> {application.Company__c}</p>
+                                </template>
+                                <template lwc:else>
+                                    <p>No application information available.</p>
+                                </template>
+                            </div>
+                        </lightning-card>
                     </template>
-                    <template if:false={application}>
-                        <p>No application found.</p>
+                    <template if:false={account}>
+                        <p>No account information available.</p>
                     </template>
                 </lightning-tab>
                 <lightning-tab label="Account Information">
