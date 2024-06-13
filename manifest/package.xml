@@ -2,7 +2,11 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <version>59.0</version>
     <types>
-        <members>User.Account__c</members>
-        <name>CustomField</name>
+        <members>Application_Stage</members>
+        <name>PathAssistant</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomTab</name>
     </types>
 </Package>

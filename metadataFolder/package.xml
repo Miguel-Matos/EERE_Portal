@@ -3,19 +3,50 @@
     <types>
         <members>AccountController</members>
         <members>ApplicationController</members>
+        <members>UploadController</members>
         <name>ApexClass</name>
     </types>
     <types>
+        <members>Application__c.Annual_Revenue__c</members>
+        <members>Application__c.Company__c</members>
+        <members>Application__c.Description__c</members>
+        <members>Application__c.Discouraged__c</members>
+        <members>Application__c.Email__c</members>
+        <members>Application__c.NumberOfEmployees__c</members>
+        <members>Application__c.Phone__c</members>
+        <members>Application__c.Stage__c</members>
         <members>User.Account__c</members>
+        <members>User.Application__c</members>
         <name>CustomField</name>
     </types>
     <types>
+        <members>Application__c</members>
         <members>User</members>
         <name>CustomObject</name>
     </types>
     <types>
+        <members>Application__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Application_Record_Page</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
         <members>customerPortal</members>
         <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>Application__c.All</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>Application_Stage</members>
+        <name>PathAssistant</name>
+    </types>
+    <types>
+        <members>Application__c.Application</members>
+        <name>RecordType</name>
     </types>
     <version>59.0</version>
 </Package>

@@ -11,4 +11,15 @@
         <type>Text</type>
         <unique>true</unique>
     </fields>
+    <fields>
+        <fullName>Application__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>false</externalId>
+        <label>Application</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
 </CustomObject>
