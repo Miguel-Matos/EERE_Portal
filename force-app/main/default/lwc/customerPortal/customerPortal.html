@@ -43,9 +43,13 @@
                     </template>
                 </lightning-tab>
                 <lightning-tab label="Document Submission">
-                    <lightning-file-upload label="Upload Document" name="fileUploader" accept=".pdf,.doc,.docx"
-                        record-id={recordId} onuploadfinished={handleUploadFinished}>
-                    </lightning-file-upload>
+                        <lightning-file-upload
+                            label="Upload Files"
+                            name="fileUploader"
+                            accept=".pdf,.doc,.docx"
+                            record-id={recordId}
+                            onuploadfinished={handleUploadFinished}>
+                        </lightning-file-upload>
                 </lightning-tab>
                 <lightning-tab label="Appian Information">
                     <c-appian></c-appian>
