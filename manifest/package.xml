@@ -2,11 +2,7 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <version>59.0</version>
     <types>
-        <members>*</members>
-        <name>Role</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>Profile</name>
+        <members>customerPortal</members>
+        <name>LightningComponentBundle</name>
     </types>
 </Package>
