@@ -7,7 +7,12 @@ public class AccountControllerTest {
             Name = 'Skid McMarks',
             Industry = 'Technology',
             Phone = '1234567890',
-            Website = 'www.iAmSoTired.com'
+            Website = 'www.iAmSoTired.com',
+            Rating = 'Hot',
+            AnnualRevenue = 500000,
+            YearStarted = '1492',
+            Type = 'Prospect',
+            Description = 'We make pillows'
         );
         insert testAccount;
 
@@ -40,6 +45,11 @@ public class AccountControllerTest {
             System.assertEquals('Technology', result.Industry);
             System.assertEquals('1234567890', result.Phone);
             System.assertEquals('www.iAmSoTired.com', result.Website);
+            System.assertEquals('Hot', result.Rating);
+            System.assertEquals(500000, result.AnnualRevenue);
+            System.assertEquals('1492', result.YearStarted);
+            System.assertEquals('Prospect', result.Type);
+            System.assertEquals('We make pillows', result.Description);
         }
     }
 

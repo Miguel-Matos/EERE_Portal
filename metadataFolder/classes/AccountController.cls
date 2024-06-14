@@ -13,7 +13,7 @@ public with sharing class AccountController {
 
         if (loggedInUser.Account__c != null) {
             Account userAccount = [
-                SELECT Id, Name, Industry, Phone, Website 
+                SELECT Id, Name, Industry, Phone, Website, Type, Rating, AnnualRevenue, YearStarted, Description 
                 FROM Account 
                 WHERE Id = :loggedInUser.Account__c 
                 LIMIT 1
