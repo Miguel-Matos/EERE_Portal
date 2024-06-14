@@ -1,8 +1,7 @@
 import { LightningElement, wire, track, api } from 'lwc';
-import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 import getAccountInfo from '@salesforce/apex/AccountController.getAccountInfo';
 import getApplicationInfo from '@salesforce/apex/ApplicationController.getApplicationInfo';
-import uploadFile from '@salesforce/apex/UploadController.uploadFile';
+
 export default class CustomerPortal extends LightningElement {
   @track account;
   @track error;

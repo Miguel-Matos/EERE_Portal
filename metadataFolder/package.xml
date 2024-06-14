@@ -41,10 +41,6 @@
         <name>ListView</name>
     </types>
     <types>
-        <members>Application_Stage</members>
-        <name>PathAssistant</name>
-    </types>
-    <types>
         <members>Application__c.Application</members>
         <name>RecordType</name>
     </types>

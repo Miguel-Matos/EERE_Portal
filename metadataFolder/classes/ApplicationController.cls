@@ -17,7 +17,7 @@ public with sharing class ApplicationController {
 
         if (loggedInUser.Application__c != null) {
             Application__c userApp = [
-                SELECT Id, Name, Stage__c, Phone__c, Company__c 
+                SELECT Id, Name, Stage__c, Phone__c, Company__c, Description__c, Annual_Revenue__c, Email__c, NumberOfEmployees__c
                 FROM Application__c 
                 WHERE Id = :loggedInUser.Application__c
                 LIMIT 1

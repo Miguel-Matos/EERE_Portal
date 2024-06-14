@@ -7,10 +7,22 @@
                         <lightning-card title="Application Status">
                             <div class="slds-m-around_medium">
                                 <template lwc:if={application}>
-                                    <p><strong>Name:</strong> {application.Name}</p>
-                                    <p><strong>Application Stage:</strong> {application.Stage__c}</p>
-                                    <p><strong>Phone:</strong> {application.Phone__c}</p>
-                                    <p><strong>Company:</strong> {application.Company__c}</p>
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="slds-col">
+                                            <p><strong>Name:</strong> {application.Name}</p>
+                                            <p><strong>Application Stage:</strong> {application.Stage__c}</p>
+                                            <p><strong>Phone:</strong> {application.Phone__c}</p>
+                                            <p><strong>Company:</strong> {application.Company__c}</p>
+                                        </div>
+                                        <div class="slds-col">
+                                            <p><strong>Annual Revenue:</strong> {application.Annual_Revenue__c}</p>
+                                            <p><strong>Email:</strong> {application.Email__c}</p>
+                                            <p><strong>Number of Employees:</strong> {application.NumberOfEmployees__c}</p>
+                                            <p><strong>Description:</strong> {application.Description__c}</p>
+                                        </div>
+                                    </div>
+                                    
+
                                 </template>
                                 <template lwc:else>
                                     <p>No application information available.</p>
@@ -27,10 +39,13 @@
                         <lightning-card title="Account Information">
                             <div class="slds-m-around_medium">
                                 <template lwc:if={account}>
+                                    <p><strong>Account Active:</strong> {account.Active__c}</p>
                                     <p><strong>Name:</strong> {account.Name}</p>
                                     <p><strong>Industry:</strong> {account.Industry}</p>
                                     <p><strong>Phone:</strong> {account.Phone}</p>
                                     <p><strong>Website:</strong> {account.Website}</p>
+                                    <p><strong>Annual Revenue:</strong> {account.AnnualRevenue}</p>
+                                    <p><strong>Description:</strong> {account.Description}</p>
                                 </template>
                                 <template lwc:else>
                                     <p>No account information available.</p>
@@ -43,13 +58,14 @@
                     </template>
                 </lightning-tab>
                 <lightning-tab label="Document Submission">
-                        <lightning-file-upload
-                            label="Upload Files"
-                            name="fileUploader"
-                            accept=".pdf,.doc,.docx"
-                            record-id={recordId}
-                            onuploadfinished={handleUploadFinished}>
-                        </lightning-file-upload>
+                    <lightning-file-upload
+                        label="Upload Files"
+                        name="fileUploader"
+                        accept=".pdf,.doc,.docx"
+                        record-id={recordId}
+                        onuploadfinished={handleUploadFinished}
+                        multiple>
+                    </lightning-file-upload>
                 </lightning-tab>
                 <lightning-tab label="Appian Information">
                     <c-appian></c-appian>

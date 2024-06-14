@@ -1,14 +1,15 @@
-import { LightningElement, wire, track } from 'lwc';
-import { ShowToastEvent } from 'lightning/platformShowToastEvent';
+import { LightningElement, wire, track, api } from 'lwc';
 import getAccountInfo from '@salesforce/apex/AccountController.getAccountInfo';
 import getApplicationInfo from '@salesforce/apex/ApplicationController.getApplicationInfo';
-import uploadFile from '@salesforce/apex/UploadController.uploadFile';
 
 export default class CustomerPortal extends LightningElement {
   @track account;
   @track error;
   @track application;
   @track appError
+  @api recordId;
+  @track filesUploaded;
+  @track uploadError;
 
   @wire(getAccountInfo)
   wiredAccount({ error, data }) {
@@ -34,30 +35,10 @@ export default class CustomerPortal extends LightningElement {
           console.error('Error fetching application information:', error);
       }
   }
+  // Abandoned due to time constraints
+//   handleUploadFinished(event) {
+    
+// }
 
-  handleUploadFinished(event) {
-    const uploadedFiles = event.detail.files;
 
-    uploadedFiles.forEach(file => {
-        uploadFile({ fileName: file.name, contentVersionId: file.documentId })
-            .then(result => {
-                this.dispatchEvent(
-                    new ShowToastEvent({
-                        title: 'Success',
-                        message: 'File uploaded successfully',
-                        variant: 'success'
-                    })
-                );
-            })
-            .catch(error => {
-                this.dispatchEvent(
-                    new ShowToastEvent({
-                        title: 'Error uploading file',
-                        message: error.body.message,
-                        variant: 'error'
-                    })
-                );
-            });
-    });
-}
 }
