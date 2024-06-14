@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: #d3d3d3;
+    /* Light grey color for general text */
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.energy-logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #d3d3d3;
+    /* Light grey color for logo text */
+    background-color: green;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.nav-links a {
+    color: #d3d3d3;
+    /* Light grey color for navigation links */
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+    /* Keeping white color on hover for contrast */
+}

@@ -1,0 +1,39 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: #d3d3d3;
+    /* Light grey color */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title {
+    font-weight: bold;
+    color: #d3d3d3;
+    /* Light grey color for titles */
+}
+
+a {
+    color: #d3d3d3;
+    /* Light grey color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+    /* Keeping white color on hover for contrast */
+}
+
+.social-icons lightning-icon {
+    cursor: pointer;
+    margin-right: 10px;
+    --sds-c-icon-color-foreground-default: #d3d3d3;
+    /* Light grey color for icons */
+}
